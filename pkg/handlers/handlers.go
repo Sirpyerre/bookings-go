@@ -1,11 +1,11 @@
 package handlers
 
 import (
-	"github.com/Sirpyerre/go-course/pkg/config"
-	"github.com/Sirpyerre/go-course/pkg/models"
+	"github.com/Sirpyerre/bookings/pkg/config"
+	"github.com/Sirpyerre/bookings/pkg/models"
 	"net/http"
 
-	"github.com/Sirpyerre/go-course/pkg/render"
+	"github.com/Sirpyerre/bookings/pkg/render"
 )
 
 // Repo the repository used by the handlers

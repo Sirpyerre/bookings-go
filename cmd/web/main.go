@@ -2,9 +2,9 @@ package main
 
 import (
 	"fmt"
-	"github.com/Sirpyerre/go-course/pkg/config"
-	"github.com/Sirpyerre/go-course/pkg/handlers"
-	"github.com/Sirpyerre/go-course/pkg/render"
+	"github.com/Sirpyerre/bookings/pkg/config"
+	"github.com/Sirpyerre/bookings/pkg/handlers"
+	"github.com/Sirpyerre/bookings/pkg/render"
 	"github.com/alexedwards/scs/v2"
 	"log"
 	"net/http"
