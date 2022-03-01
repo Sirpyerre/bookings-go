@@ -2,9 +2,9 @@ package main
 
 import (
 	"fmt"
-	"github.com/Sirpyerre/bookings/pkg/config"
-	"github.com/Sirpyerre/bookings/pkg/handlers"
-	"github.com/Sirpyerre/bookings/pkg/render"
+	"github.com/Sirpyerre/bookings/internal/config"
+	"github.com/Sirpyerre/bookings/internal/handlers"
+	"github.com/Sirpyerre/bookings/internal/render"
 	"github.com/alexedwards/scs/v2"
 	"log"
 	"net/http"

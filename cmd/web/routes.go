@@ -1,8 +1,8 @@
 package main
 
 import (
-	"github.com/Sirpyerre/bookings/pkg/config"
-	"github.com/Sirpyerre/bookings/pkg/handlers"
+	"github.com/Sirpyerre/bookings/internal/config"
+	"github.com/Sirpyerre/bookings/internal/handlers"
 	"github.com/go-chi/chi/v5"
 	"github.com/go-chi/chi/v5/middleware"
 	"net/http"

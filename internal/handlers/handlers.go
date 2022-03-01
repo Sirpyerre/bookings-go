@@ -3,12 +3,11 @@ package handlers
 import (
 	"encoding/json"
 	"fmt"
-	"github.com/Sirpyerre/bookings/pkg/config"
-	"github.com/Sirpyerre/bookings/pkg/models"
+	"github.com/Sirpyerre/bookings/internal/config"
+	"github.com/Sirpyerre/bookings/internal/models"
+	"github.com/Sirpyerre/bookings/internal/render"
 	"log"
 	"net/http"
-
-	"github.com/Sirpyerre/bookings/pkg/render"
 )
 
 // Repo the repository used by the handlers
