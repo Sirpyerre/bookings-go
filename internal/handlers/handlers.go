@@ -4,10 +4,13 @@ import (
 	"encoding/json"
 	"fmt"
 	"github.com/Sirpyerre/bookings/internal/config"
+	"github.com/Sirpyerre/bookings/internal/driver"
 	"github.com/Sirpyerre/bookings/internal/forms"
 	"github.com/Sirpyerre/bookings/internal/helpers"
 	"github.com/Sirpyerre/bookings/internal/models"
 	"github.com/Sirpyerre/bookings/internal/render"
+	"github.com/Sirpyerre/bookings/internal/repository"
+	"github.com/Sirpyerre/bookings/internal/repository/dbrepo"
 	"log"
 	"net/http"
 )
@@ -18,12 +21,14 @@ var Repo *Repository
 // Repository is the repository type
 type Repository struct {
 	App *config.AppConfig
+	DB  repository.DatabaseRepo
 }
 
 // NewRepo creates a new repository
-func NewRepo(a *config.AppConfig) *Repository {
+func NewRepo(a *config.AppConfig, db *driver.DB) *Repository {
 	return &Repository{
 		App: a,
+		DB:  dbrepo.NewPostgresRepo(db.SQL, a),
 	}
 }
 
